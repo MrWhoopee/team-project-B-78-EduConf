@@ -1,3 +1,44 @@
-<section>
-  <h1>Привіт</h1>
+<section class="hero" id="hero">
+  <div class="container">
+    <h1 class="hero-title">Join Us for EduConf 2025</h1>
+    <p class="hero-text">
+      Mark your calendars for the Educational Conference 2025, happening on
+      August 15-17, 2025. This event is designed for educators and innovators
+      eager to explore the latest trends in education.
+    </p>
+    <a href="#schedule" class="hero-button">Learn More</a>
+    <picture class="hero-picture">
+      <!-- WebP версії -->
+      <source
+        srcset="image-1312.webp"
+        width="1312"
+        height="738"
+        media="(min-width: 1158px)"
+        type="image/webp"
+      />
+      <source
+        srcset="image-704.webp"
+        width="704"
+        height="396"
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+
+      <!-- JPEG версії -->
+      <source srcset="" width="1312" height="738" media="(min-width: 1158px)" />
+      <source srcset="" width="704" height="396" media="(min-width: 768px)" />
+
+      <!-- WebP для мобільних -->
+      <source srcset="image-335.webp" type="image/webp" />
+
+      <!-- fallback JPEG мобільні -->
+      <img
+        class="hero-image"
+        src=""
+        alt="Audience at a conference"
+        width="335"
+        height="188.44"
+      />
+    </picture>
+  </div>
 </section>
