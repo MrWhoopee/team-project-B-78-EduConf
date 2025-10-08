@@ -43,61 +43,114 @@
   background: #747bff;
 } */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1439px) {
+  .page-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 20px;
+  }
+
+  .header-nav-logo {
+    display: inline-flex;
+    cursor: pointer;
+  }
+
+  .header-nav-logo-icon {
+    width: 158px;
+    height: 37px;
+  }
+
+  .burger-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    display: flex;
+    cursor: pointer;
+    /* justify-content: space-between; */
+  }
 }
 
-.page-header {
+@media screen and (min-width: 1440px) {
+  .page-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .page-header {
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-nav-logo {
+    margin-right: 24px;
+  }
+
+  .header-nav-list {
+    /* margin-bottom: 16px; */
+
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .header-nav-item {
+  }
+
+  .header-nav-link {
+    display: block;
+    padding: 24px 0;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-scheme-1-text);
+  }
+
+  .register-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--color-governor-bay);
+    border-radius: 6px;
+    padding: 10px 24px;
+    min-width: 192px;
+    background: var(--color-governor-bay);
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-white);
+
+    margin-bottom: 40px;
+    margin: auto 0;
+  }
+
+  .burger-button {
+    display: none;
+  }
 }
 
-.page-header-container {
+@media screen and (min-width: 768px) {
 }
 
-.header-nav {
-}
+@media screen and (max-width: 1439px) {
+  .register-button {
+    display: none;
+  }
 
-.header-nav-logo {
-}
-
-.header-nav-logo-icon {
-}
-
-.burger-button {
-}
-
-.burger-button-icon {
-}
-
-.header-nav-list {
-  margin-bottom: 16px;
-}
-
-.header-nav-item {
-}
-
-.header-nav-link {
-  display: block;
-  padding: 16px 0;
-
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-scheme-1-text);
-}
-
-.register-button {
-  border: 1px solid var(--color-governor-bay);
-  border-radius: 6px;
-  padding: 10px 24px;
-  width: 335px;
-  /* height: 44px; */
-  background: var(--color-governor-bay);
-
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-white);
-
-  margin-bottom: 40px;
+  .header-nav-list {
+    display: none;
+  }
 }
