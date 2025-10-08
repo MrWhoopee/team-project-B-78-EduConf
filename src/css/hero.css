@@ -1,3 +1,141 @@
+/* Styles for Mobile devices */
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 64px 20px;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 92px 64px;
+  }
+}
+
 .hero {
-  background-color: var(--color-scheme-1-accent);
+  background-color: var(--color-scheme-1-background);
+}
+
+.hero-content {
+  padding-bottom: 40px;
+}
+
+.hero-title {
+  font-family: var(--second-family);
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--color-scheme-1-text);
+
+  padding-bottom: 24px;
+}
+
+.hero-text {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-scheme-1-text);
+
+  padding-bottom: 32px;
+}
+
+.hero-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-white);
+
+  border: 1px solid var(--color-governor-bay);
+  border-radius: 6px;
+  background: var(--color-governor-bay);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: transparent;
+  color: var(--color-scheme-1-text);
+}
+
+.hero-button:active {
+  background: var(--color-governor-bay-lighter);
+  color: var(--color-scheme-1-text);
+}
+
+.hero-button:disabled {
+  background: var(--color-governor-bay);
+  opacity: 0.3;
+  color: var(--color-white);
+}
+
+.mobile-br {
+  display: inline;
+}
+
+.tablet-br {
+  display: none;
+}
+
+.desktop-br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-br {
+    display: none;
+  }
+
+  .tablet-br {
+    display: inline;
+  }
+
+  .hero-button {
+    max-width: 193px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .tablet-br {
+    display: none;
+  }
+
+  .desktop-br {
+    display: inline;
+  }
+
+  .hero-content {
+    display: flex;
+    /* column-gap: 32px; */
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .hero-title {
+    font-size: 56px;
+  }
+
+  .hero-text {
+    padding-bottom: 0;
+  }
+
+  .hero-button {
+    min-width: 193px;
+    max-height: 44px;
+  }
 }
