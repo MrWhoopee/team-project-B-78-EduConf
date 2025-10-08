@@ -24,6 +24,18 @@
   padding-bottom: 20px; */
 }
 
+.mobile-menu-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  /* stroke: #ffffff; */
+  transition: stroke 250ms linear;
+}
+
 .header-nav-list {
   margin-bottom: 16px;
 }
