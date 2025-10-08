@@ -1,0 +1,6 @@
+/* !section Register  mobile(base) */
+@media screen {
+  section .register {
+    padding: 64px 20px;
+  }
+}
