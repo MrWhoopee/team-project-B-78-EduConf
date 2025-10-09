@@ -28,9 +28,17 @@
 
     background: var(--color-scheme-1-background);
 
-    @media screen and (min-width: 768px) {}
+    @media screen and (min-width: 768px) {
+        width: 640px;
+        height: 695px;
+        padding: 64px 34px;
+    }
 
-    @media screen and (min-width: 1158px) {}
+    @media screen and (min-width: 1440px) {
+        width: 768px;
+        height: 668px;
+        padding: 64px;
+    }
 }
 
 .succes-close-btn {
@@ -77,9 +85,17 @@
     margin-right: auto;
     margin-top: 16px;
 
-    border: 1px solid var(--color-governor-bay);
     border-radius: 6px;
     background: var(--color-governor-bay);
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 192px;
+        height: 44px
+    }
 }
 
 .succes-btn:hover,
@@ -87,4 +103,15 @@
     border: 1px solid var(--color-governor-bay);
     background: var(--color-white);
     color: var(--color-scheme-1-text);
+}
+
+.succes-btn:active {
+    background: var(--color-governor-bay-lighter);
+    color: var(--color-scheme-1-text);
+}
+
+.succes-btn:disabled {
+    background: var(--color-governor-bay-lighter);
+    color: var(--color-white);
+    border: none;
 }
