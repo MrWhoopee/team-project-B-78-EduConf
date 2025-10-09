@@ -1,6 +1,4 @@
 
-.about-section {}
-
 .about {
     
 
@@ -16,8 +14,6 @@
         align-items: center;
     }
 }
-
-.about-icon {}
 
 .about-text {
     display: flex;
@@ -60,8 +56,4 @@
     @media only screen and (min-width: 1440px) {
         width: 640px;
     }
-}
-
-.about-image {
-
 }
