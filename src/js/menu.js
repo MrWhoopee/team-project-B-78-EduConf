@@ -3,6 +3,17 @@ const closeBtnEl = document.querySelector(".mobile-menu-close-btn")
 const mobMenuEl = document.querySelector(".mobile-menu")
 const bodyEl = document.body;
 
+
+// burgerEl.addEventListener("click", () => {
+//     modal.classList.toggle("is-open")
+// })
+
+// closeBtnEl.addEventListener("click", () => {
+//     modal.classList.toggle("is-open")
+// })
+
+
+
 burgerEl.addEventListener('click', toggleModal) 
 closeBtnEl.addEventListener('click', toggleModal)
 
