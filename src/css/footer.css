@@ -55,7 +55,7 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .footer-nav {
+  .footer .container {
     padding-top: 80px;
     padding-bottom: 80px;
   }
