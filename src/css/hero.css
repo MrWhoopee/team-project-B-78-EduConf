@@ -62,6 +62,18 @@
   color: var(--color-white);
 }
 
+@media only screen and (min-width: 768px) {
+  .hero-button {
+    min-width: 193px;
+  }
+
+  .hero-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .hero-content {
     display: flex;
@@ -69,7 +81,6 @@
   }
 
   .hero-row {
-    display: flex;
     flex-direction: row;
     column-gap: 35px;
   }
