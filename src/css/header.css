@@ -98,6 +98,8 @@
   }
 
   .header-nav-link {
+    position: relative;
+
     display: block;
     padding: 24px 0;
 
@@ -107,6 +109,35 @@
     line-height: 1.5;
     color: var(--color-scheme-1-text);
   }
+
+  .header-nav-link:hover::after,
+  .header-nav-link:focus::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-scheme-1-text);
+    border-radius: 2px;
+    transform: scaleX(1);
+    transform-origin: center;
+    transition: transform 250ms ease;
+  }
+
+  .header-nav-link:active::after {
+    background-color: var(--color-scheme-1-accent);
+  }
+
+  .header-nav-link:active {
+    color: var(--color-scheme-1-accent);
+  }
+
+  /* disabled link look */
+  /* .header-nav-link:disabled {
+    color: var(--color-neutral-darkest);
+    cursor: not-allowed;
+  } */
 
   .register-button {
     display: flex;
@@ -125,8 +156,29 @@
     line-height: 1.5;
     color: var(--color-white);
 
+    /* transition: background 250ms linear; */
+
     margin: auto 0;
   }
+
+  .register-button:hover,
+  .register-button:focus {
+    background: transparent;
+    color: var(--color-scheme-1-text);
+  }
+
+  .register-button:active {
+    background: var(--color-governor-bay-lighter);
+  }
+
+  /* .register-button.is-disabled {
+    background: var(--color-governor-bay);
+    opacity: 0.3;
+
+    color: var(--color-white);
+
+    cursor: not-allowed;
+  } */
 
   .burger-button {
     display: none;
