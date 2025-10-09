@@ -3,7 +3,7 @@
 }
 
 .hero-content {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .hero-title {
@@ -13,7 +13,7 @@
   letter-spacing: -0.01em;
   color: var(--color-scheme-1-text);
 
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .hero-text {
@@ -22,7 +22,7 @@
   line-height: 1.5;
   color: var(--color-scheme-1-text);
 
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   width: 99%;
 }
 
@@ -62,18 +62,6 @@
   color: var(--color-white);
 }
 
-.mobile-br {
-  display: inline;
-}
-
-.tablet-br {
-  display: none;
-}
-
-.desktop-br {
-  display: none;
-}
-
 @media screen and (min-width: 1440px) {
   .hero-content {
     display: flex;
@@ -92,7 +80,7 @@
   }
 
   .hero-text {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .hero-button {

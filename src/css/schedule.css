@@ -104,6 +104,7 @@
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-scheme-1-text);
+
   @media screen and (min-width: 1440px) {
     display: block;
     min-width: 160px;

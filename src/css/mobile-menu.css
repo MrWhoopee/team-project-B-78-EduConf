@@ -7,7 +7,7 @@
     height: 100vh;
     z-index: 99999;
     background-color: #ffffff;
-    transform: translateX(100%);
+    transform: translateX(200%);
     transition: transform 500ms linear;
 
     pointer-events: none;
@@ -15,6 +15,7 @@
 
   .mobile-menu.is-open {
     transform: translateX(0%);
+    pointer-events: auto;
   }
 
   .menu-logo-and-button-container {
@@ -50,7 +51,10 @@
   .mobile-menu-close-btn-icon {
     width: 24px;
     height: 24px;
-    fill: #000000;
+
+    fill: var(--color-scheme-1-text);
+    stroke-width: 1px;
+    stroke: var(--color-scheme-1-text);
   }
 
   .menu-nav-list {
@@ -102,7 +106,7 @@
     height: 100vh;
     z-index: 99999;
     background-color: #ffffff;
-    transform: translateX(100%);
+    transform: translateX(200%);
     transition: transform 500ms linear;
 
     pointer-events: none;
@@ -146,7 +150,9 @@
   .mobile-menu-close-btn-icon {
     width: 24px;
     height: 24px;
-    fill: #000000;
+    fill: var(--color-scheme-1-text);
+    stroke-width: 1px;
+    stroke: var(--color-scheme-1-text);
   }
 
   .menu-nav-list {
@@ -184,7 +190,7 @@
     border: 1px solid var(--color-governor-bay);
     border-radius: 6px;
     padding: 10px 24px;
-    min-width: 335px;
+    min-width: 256px;
     background: var(--color-governor-bay);
 
     font-family: var(--font-family);
