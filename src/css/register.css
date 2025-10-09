@@ -73,6 +73,7 @@
     font-size: 16px;
     line-height: 1.5;
     transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+    pointer-events: auto;
   }
 
   .register-btn:hover,
