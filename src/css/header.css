@@ -69,7 +69,6 @@
     line-height: 0;
     display: flex;
     cursor: pointer;
-    /* justify-content: space-between; */
   }
 }
 
@@ -96,9 +95,6 @@
     display: flex;
     flex-direction: row;
     gap: 32px;
-  }
-
-  .header-nav-item {
   }
 
   .header-nav-link {
@@ -129,16 +125,12 @@
     line-height: 1.5;
     color: var(--color-white);
 
-    margin-bottom: 40px;
     margin: auto 0;
   }
 
   .burger-button {
     display: none;
   }
-}
-
-@media screen and (min-width: 768px) {
 }
 
 @media screen and (max-width: 1439px) {
