@@ -2,7 +2,7 @@
   .footer {
     background: var(--color-scheme-2-background);
   }
-  .footer-nav {
+  .footer .container {
     padding-top: 48px;
     padding-bottom: 48px;
   }
