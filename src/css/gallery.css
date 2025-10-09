@@ -1,8 +1,4 @@
 @media screen {
-  .gallery {
-    padding-bottom: 64px;
-    padding-top: 64px;
-  }
   .gallery-title {
     font-weight: 700;
     font-size: 36px;
@@ -25,8 +21,7 @@
     margin: 0 auto;
     margin-bottom: 16px;
   }
-  .gallery-hero-img {
-  }
+
   .gallery-list {
     display: flex;
     flex-direction: row;
@@ -59,8 +54,6 @@
   .gallery-img {
     width: calc((100% - 12px) / 2);
   }
-  .gallery-list-img {
-  }
 }
 @media screen and (min-width: 1340px) {
   .gallery-title {
@@ -79,9 +72,5 @@
   }
   .gallery-list {
     flex: 640px;
-  }
-  .gallery-img {
-  }
-  .gallery-list-img {
   }
 }
