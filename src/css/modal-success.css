@@ -6,14 +6,14 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.25);
     z-index: 9999;
-
+    pointer-events: none;
     opacity: 0;
     
 }
 
 .backdrop-success.is-open-now {
     opacity: 1;
-    
+    /* pointer-events: auto;   */    
 }
 
 .modal-success {
