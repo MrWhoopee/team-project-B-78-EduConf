@@ -43,8 +43,8 @@
   background: #747bff;
 } */
 
-@media screen and (max-width: 1439px) {
-  .page-header-container {
+@media screen and (min-width: 375px) {
+  .page-header .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -74,14 +74,12 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .page-header-container {
+  .page-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-  }
-
-  .page-header {
+    padding: 17px 64px;
   }
 
   .header-nav {
@@ -95,8 +93,6 @@
   }
 
   .header-nav-list {
-    /* margin-bottom: 16px; */
-
     display: flex;
     flex-direction: row;
     gap: 32px;
