@@ -30,7 +30,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
+  padding: 10px 24px;
+  width: 100%;
 
   font-family: var(--font-family);
   font-weight: 500;
@@ -83,6 +84,7 @@
   .hero-row {
     flex-direction: row;
     column-gap: 35px;
+    align-items: flex-end;
   }
 
   .hero-title {
@@ -96,6 +98,5 @@
 
   .hero-button {
     min-width: 193px;
-    align-self: flex-end;
   }
 }
