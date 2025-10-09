@@ -9,6 +9,12 @@
         justify-content: space-between;
         align-items: center;
     }
+    @media only screen and (min-width: 1440px) {
+        padding: 92px 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .about-icon {}
@@ -36,8 +42,8 @@
     line-height: 1.2;
     letter-spacing: -0.01em;
 
-    @media only screen and (min-width: 768px) {
-        
+    @media only screen and (min-width: 1440px) {
+        font-size: 48px;
     }
 }
 
@@ -50,6 +56,10 @@
 
 .about-image-wrapper {
     width: 340px;
+
+    @media only screen and (min-width: 1440px) {
+        width: 640px;
+    }
 }
 
 .about-image {
