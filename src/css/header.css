@@ -12,18 +12,10 @@
     cursor: pointer;
   }
 
-  .header-nav-logo-icon {
-    width: 158px;
-    height: 37px;
-  }
-
   .burger-button {
-    background-color: transparent;
-    border: none;
     padding: 0;
     line-height: 0;
     display: flex;
-    cursor: pointer;
   }
 }
 
@@ -54,11 +46,7 @@
     display: inline-block;
     padding: 24px 0;
 
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--color-scheme-1-text);
+    transition: color 250ms linear;
   }
 
   .header-nav-link::after,
@@ -69,7 +57,7 @@
     bottom: 22px;
     width: 100%;
     height: 1px;
-    background-color: var(--color-neutral-darkest);
+    background-color: var(--color-scheme-1-text);
     border-radius: 2px;
     transform: scaleX(0);
     transform-origin: center;
@@ -95,19 +83,21 @@
     justify-content: center;
     align-items: center;
 
-    border: 1px solid var(--color-governor-bay);
-    border-radius: 6px;
     padding: 10px 24px;
     min-width: 192px;
-    background: var(--color-governor-bay);
 
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color: var(--color-white);
+    border: 1px solid var(--color-governor-bay);
+    border-radius: 6px;
+    background: var(--color-governor-bay);
 
     margin: auto 0;
+
+    transition: all 250ms linear;
   }
 
   .register-button:hover,
