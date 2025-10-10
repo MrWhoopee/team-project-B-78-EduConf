@@ -2,11 +2,9 @@
   .footer {
     background: var(--color-scheme-2-background);
   }
-  .container {
+  .footer .container {
     padding-top: 48px;
     padding-bottom: 48px;
-  }
-  .footer-nav {
   }
   .footer-logo {
     fill: var(--color-white);
@@ -52,26 +50,13 @@
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
-  }
-  .container {
-  }
-  .footer-nav {
-  }
-  .footer-logo {
-  }
-  .footer-icon {
-  }
-  .footer-icon-svg {
-  }
-  .footer-logo-text {
-  }
   .footer-list {
     flex-direction: row;
   }
-  .footer-list-item {
-  }
-
-  .footer-rights {
+}
+@media screen and (min-width: 1440px) {
+  .footer .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
