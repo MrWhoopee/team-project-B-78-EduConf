@@ -97,7 +97,7 @@ ol {
 }
 
 a {
-  color: var(--color-neutral-darkest);
+  color: var(--color-scheme-1-text);
   text-decoration: none;
   transition: color 250ms linear;
 }
