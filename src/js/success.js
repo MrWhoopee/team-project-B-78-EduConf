@@ -1,4 +1,4 @@
-const registerEl = document.querySelector(".register-btn")
+const registerEl = document.querySelector(".register-labels-wrapper .big-blue-btn")
 const closeBtnEl = document.querySelector(".succes-close-btn")
 const modalEl = document.querySelector(".backdrop-success")
 const bodyEl = document.body;
