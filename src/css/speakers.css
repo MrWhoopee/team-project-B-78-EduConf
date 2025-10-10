@@ -1,6 +1,5 @@
 .speakers-title {
   text-align: center;
-  color: var(--color-scheme-1-text);
   margin-bottom: 40px;
 
   @media screen and (min-width: 1440px) {
@@ -54,27 +53,13 @@
   }
 }
 
-.speaker-name {
-  font-family: var(--font-family);
-  line-height: 1.5;
-  color: var(--color-scheme-1-text);
-}
-
 .speaker-position {
-  font-family: var(--font-family);
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
-  color: var(--color-scheme-1-text);
   margin-bottom: 16px;
 }
 
 .speaker-desc {
-  font-family: var(--font-family);
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-scheme-1-text);
   margin-top: auto;
 }
 
