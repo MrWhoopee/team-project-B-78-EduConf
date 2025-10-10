@@ -4,7 +4,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 13px 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .hide-link {
+    display: none;
   }
 
   .header-nav-logo {
@@ -15,7 +20,15 @@
   .burger-button {
     padding: 0;
     line-height: 0;
-    display: flex;
+    display: inline-flex;
+  }
+
+  .register-button {
+    display: none;
+  }
+
+  .header-nav-list {
+    display: none;
   }
 }
 
@@ -78,7 +91,11 @@
     color: var(--color-scheme-1-accent);
   }
 
-  .register-button {
+  .hide-link {
+    display: block;
+  }
+
+  .page-header .big-blue-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,27 +103,12 @@
     padding: 10px 24px;
     min-width: 192px;
 
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--color-white);
-    border: 1px solid var(--color-governor-bay);
-    border-radius: 6px;
-    background: var(--color-governor-bay);
-
     margin: auto 0;
 
     transition: all 250ms linear;
   }
 
-  .register-button:hover,
-  .register-button:focus {
-    background: transparent;
-    color: var(--color-scheme-1-text);
-  }
-
-  .register-button:active {
+  .page-header .big-blue-btn:active {
     background: var(--color-governor-bay-lighter);
   }
 
@@ -116,7 +118,7 @@
 }
 
 @media screen and (max-width: 1439px) {
-  .register-button {
+  .page-header .big-blue-btn {
     display: none;
   }
 
