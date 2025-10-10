@@ -55,17 +55,6 @@
     padding-left: 24px;
     padding-right: 24px;
   }
-
-  .register-img-wrapper {
-    width: 100%;
-    max-width: 335px;
-  }
-
-  .register-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
 }
 
 /* !section Register  tablet */
@@ -92,10 +81,6 @@
     padding-right: 44px;
     min-width: 192px;
   }
-
-  .register-img-wrapper {
-    max-width: 340px;
-  }
 }
 
 /* !Styles for Desktop devices */
@@ -115,10 +100,5 @@
 
   .register-title {
     font-size: 48px;
-  }
-
-  .register-img-wrapper {
-    width: 100%;
-    max-width: 640px;
   }
 }
