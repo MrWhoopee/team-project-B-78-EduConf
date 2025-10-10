@@ -87,3 +87,38 @@
   color: #03030a;
   font-family: 'Inter', sans-serif;
 }
+
+/* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */
+
+/* По умолчанию скрываем все переносы */
+.br-mobile,
+.br-tablet,
+.br-desktop {
+  display: none;
+}
+
+/* 👇 Показываем перенос только на мобилке */
+@media (max-width: 767px) {
+  .br-mobile {
+    display: inline;
+  }
+}
+
+/* 👇 А этот — только на планшете */
+@media (min-width: 768px) and (max-width: 1439px) {
+  .br-tablet {
+    display: inline;
+  }
+}
+
+/* 👇 На десктопе — без переносов */
+@media (min-width: 1440px) {
+  .br-mobile,
+  .br-tablet {
+    display: none;
+  }
+  .br-desktop {
+    display: inline;
+  }
+}
+/* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */
