@@ -81,10 +81,6 @@
     padding-right: 44px;
     min-width: 192px;
   }
-
-  .register-img-wrapper {
-    max-width: 340px;
-  }
 }
 
 /* !Styles for Desktop devices */
@@ -104,10 +100,5 @@
 
   .register-title {
     font-size: 48px;
-  }
-
-  .register-img-wrapper {
-    width: 100%;
-    max-width: 640px;
   }
 }
