@@ -60,6 +60,7 @@ body {
   font-family: var(--font-family);
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 400;
   color: var(--color-scheme-1-text);
   background: var(--color-scheme-1-background);
 }
@@ -102,10 +103,6 @@ a {
   transition: color 250ms linear;
 }
 
-a:hover,
-a:focus {
-}
-
 a:active {
   color: var(--color-scheme-1-accent);
 }
@@ -129,19 +126,34 @@ button {
 
 .big-blue-btn {
   padding: 10px 0;
-  /* width: 100%;
-  height: 44px; */
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  line-height: 1.5;
   border: 1px solid var(--color-governor-bay);
   border-radius: 6px;
   background: var(--color-governor-bay);
   color: var(--color-white);
-  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+  transition: color 250ms linear, background-color 250ms linear;
 }
 
 .big-blue-btn:hover,
 .big-blue-btn:focus {
   background: transparent;
   color: var(--color-scheme-1-text);
+}
+
+.big-blue-btn:active {
+  background-color: var(--color-governor-bay-lighter);
+  border: 1px solid var(--color-governor-bay);
+  transform: translateY(2px);
+}
+
+.big-blue-btn:disabled {
+  background-color: var(--color-governor-bay);
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 
 .visually-hidden {
@@ -154,27 +166,4 @@ button {
   clip: rect(0 0 0 0);
   white-space: nowrap;
   border: 0;
-}
-
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 64px 20px;
-}
-
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding: 92px 64px;
-  }
 }

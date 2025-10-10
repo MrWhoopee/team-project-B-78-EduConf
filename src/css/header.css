@@ -21,6 +21,14 @@
     line-height: 0;
     display: inline-flex;
   }
+
+  .register-button {
+    display: none;
+  }
+
+  .header-nav-list {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1440px) {

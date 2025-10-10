@@ -13,12 +13,6 @@
   margin-bottom: 40px;
 }
 .testimonials-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  color: #03030a;
-  font-family: 'Teachers', sans-serif;
   margin-bottom: 24px;
 }
 
@@ -29,11 +23,7 @@
 }
 
 .testimonials-subtitle {
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
-  color: #03030a;
-  font-family: 'Inter', sans-serif;
 }
 .testimonials-list-container {
 }
@@ -59,11 +49,7 @@
 }
 
 .testimonials-text {
-  font-weight: 400;
   font-size: 20px;
-  line-height: 1.5;
-  color: #03030a;
-  font-family: 'Inter', sans-serif;
   margin-bottom: 16px;
 }
 
@@ -74,18 +60,7 @@
 }
 
 .testimonials-name {
-  font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #03030a;
-}
-.testimonials-position {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #03030a;
-  font-family: 'Inter', sans-serif;
 }
 
 /* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */ /* Br Br */
