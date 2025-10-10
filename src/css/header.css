@@ -115,7 +115,7 @@
   }
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (min) {
   .register-button {
     display: none;
   }
