@@ -51,6 +51,7 @@
   }
 
   .register .big-blue-btn {
+    min-width: 335px;
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -89,7 +90,7 @@
   .register .big-blue-btn {
     padding-left: 44px;
     padding-right: 44px;
-    width: 192px;
+    min-width: 192px;
   }
 
   .register-img-wrapper {
