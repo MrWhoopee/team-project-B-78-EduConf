@@ -126,7 +126,7 @@ button {
 
 .big-blue-btn {
   padding: 10px 0;
-  width: 100%;
+  /* width: 100%; */
   font-size: 16px;
   font-weight: 500;
   font-family: var(--font-family);
