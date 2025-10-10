@@ -94,35 +94,20 @@
     color: var(--color-scheme-1-accent);
   }
 
-  .menu-register-button {
+  .mobile-menu .big-blue-btn {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    border: 1px solid var(--color-governor-bay);
-    border-radius: 6px;
     padding: 10px 24px;
     min-width: 335px;
-    background: var(--color-governor-bay);
-
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--color-white);
 
     margin-bottom: 40px;
 
     transition: all 250ms linear;
   }
 
-  .menu-register-button:hover,
-  .menu-register-button:focus {
-    background: transparent;
-    color: var(--color-scheme-1-text);
-  }
-
-  .menu-register-button:active {
+  .mobile-menu .big-blue-btn:active {
     background: var(--color-governor-bay-lighter);
   }
 }
@@ -140,7 +125,7 @@
     text-align: center;
   }
 
-  .menu-register-button {
+  .mobile-menu .big-blue-btn {
     padding: 10px 24px;
     min-width: 256px;
   }
