@@ -8,7 +8,6 @@
     z-index: 9999;
     pointer-events: none;
     opacity: 0;
-    
 }
 
 .backdrop-success.is-open-now {
@@ -85,6 +84,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 16px;
+    border: none;
 
     border-radius: 6px;
     background: var(--color-governor-bay);
