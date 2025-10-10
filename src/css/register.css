@@ -15,21 +15,8 @@
     gap: 24px;
   }
 
-  .register-title {
-    font-family: var(--second-family);
-    color: var(--color-scheme-1-text);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-  }
-
   .register-desc {
-    font-family: var(--font-family);
-    color: var(--color-scheme-1-text);
-    font-weight: 400;
     font-size: 18px;
-    line-height: 1.5;
   }
 
   .register-input-wrapper {
@@ -43,22 +30,24 @@
     border-radius: 6px;
     padding: 8px 12px;
     outline: transparent;
-    transition: color 300ms ease-in-out;
+    transition: color 250ms linear;
+  }
+
+  .register-form-input:placeholder-shown {
+    color: var(--opacity-neutral-darkest-60);
   }
 
   .register-form-input:focus {
     border-color: var(--color-scheme-1-accent);
   }
 
-  .register-form-input::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--opacity-neutral-darkest-60);
+  .register-form-input:not(:placeholder-shown) {
+    border-color: (--color-neutral-darkest);
   }
 
-  .register-form-input:focus {
-    color: var(--color-scheme-1-text);
+  .register-form-input.error {
+    border-color: var(--color-red);
+    color: var(--color-red);
   }
 
   .register .big-blue-btn {
@@ -74,9 +63,7 @@
   .register-img {
     width: 100%;
     height: auto;
-    display: block;
     object-fit: cover;
-    /* aspect-ratio: 335 / 259; */
   }
 }
 
@@ -99,18 +86,15 @@
     margin-bottom: 0;
   }
 
-  .register-btn {
-    padding: 10px 44px;
-    height: 44px;
+  .register .big-blue-btn {
+    padding-left: 44px;
+    padding-right: 44px;
     width: 192px;
   }
 
   .register-img-wrapper {
     max-width: 340px;
   }
-  /* .register-img {
-    aspect-ratio: 340 / 547;
-  } */
 }
 
 /* !Styles for Desktop devices */
@@ -135,12 +119,5 @@
   .register-img-wrapper {
     width: 100%;
     max-width: 640px;
-  }
-
-  .register-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
   }
 }
