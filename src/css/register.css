@@ -55,17 +55,6 @@
     padding-left: 24px;
     padding-right: 24px;
   }
-
-  .register-img-wrapper {
-    width: 100%;
-    max-width: 335px;
-  }
-
-  .register-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
 }
 
 /* !section Register  tablet */
