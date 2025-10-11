@@ -1,45 +1,109 @@
-<section class="register">
+<section class="register" id="register">
   <div class="container">
-    <div class="register-text-wrapper">
-      <h2 class="register-title">Secure Your Spot</h2>
-      <p class="register-desc">
-        Don't miss out on two days of innovation, networking, and learning.
-        Complete your registration in just a few steps and get ready to be
-        inspired at EduConf 2025.
-      </p>
-    </div>
-    <div class="footer-register-wrapper">
-      <div class="form-field-wrapper">
-        <label class="form-field-label" for="user-name">Name*</label>
-        <div class="register-input-wrapper">
-          <input
-            class="form-input"
-            type="text"
-            id="user-name"
-            name="user-name"
-            placeholder="Enter your full name"
-            required
-          />
-        </div>
+    <div class="register-text-content-wrapper">
+      <div class="register-desc-wrapper">
+        <h2 class="register-title">Secure Your Spot</h2>
+
+        <p class="register-desc">
+          Don't miss out on two days of innovation, networking, and learning.
+          Complete your registration in just a few steps and get ready to be
+          inspired at EduConf 2025.
+        </p>
       </div>
-      <div class="form-field-wrapper">
-        <label class="form-field-label" for="user-mail">Email*</label>
-        <div class="input-wrapper">
-          <input
-            class="register-form-input"
-            type="tel"
-            id="user-mail"
-            name="user-tel"
-            placeholder="Enter your email address"
-            required
-            pattern=""
-            title=""
-          />
+      <form class="register-form">
+        <div class="register-labels-wrapper">
+          <div class="register-form-field-wrapper">
+            <label class="register-form-field-label" for="user-name"
+              >Name*</label
+            >
+            <div class="register-input-wrapper">
+              <input
+                class="register-form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+          </div>
+          <div class="register-form-field-wrapper">
+            <label class="register-form-field-label" for="user-mail"
+              >Email*</label
+            >
+            <div class="register-input-wrapper">
+              <input
+                class="register-form-input"
+                type="email"
+                id="user-mail"
+                name="user-email"
+                placeholder="Enter your email address"
+                required
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              />
+            </div>
+          </div>
+          <button class="big-blue-btn" type="submit">Register Now</button>
         </div>
-      </div>
-      <button class="registre-btn">Register Now</button>
+      </form>
     </div>
 
-    <div class="register-img-wrapper"></div>
+    <picture>
+      <!-- Desktop -->
+      <source
+        srcset="
+          ./img/register/webp/register-desktop.webp    1x,
+          ./img/register/webp/register-desktop@2x.webp 2x
+        "
+        media="(min-width: 1440px)"
+        type="image/webp"
+        width="640"
+      />
+
+      <source
+        srcset="
+          ./img/register/register-jpeg/register-desktop.jpg    1x,
+          ./img/register/register-jpeg/register-desktop@2x.jpg 2x
+        "
+        media="(min-width: 1440px)"
+        width="640"
+      />
+      <!-- Tablet -->
+      <source
+        srcset="
+          ./img/register/webp/register-tablet.webp    1x,
+          ./img/register/webp/register-tablet@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp"
+        width="340"
+      />
+
+      <source
+        srcset="
+          ./img/register/register-jpeg/register-tablet.jpg    1x,
+          ./img/register/register-jpeg/register-tablet@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+        width="340"
+      />
+      <!-- Mobile -->
+      <source
+        srcset="
+          ./img/register/webp/register-mobile.webp    1x,
+          ./img/register/webp/register-mobile@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        type="image/webp"
+        width="335"
+      />
+
+      <img
+        srcset="./img/register/register-jpeg/register-mobile@2x.jpg 2x"
+        src="./img/register/register-jpeg/register-mobile.jpg"
+        width="335"
+        alt="Person handing event badge"
+      />
+    </picture>
   </div>
 </section>

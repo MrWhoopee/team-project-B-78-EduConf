@@ -46,14 +46,125 @@
   --second-family: 'Teachers', sans-serif;
 }
 
-/* body {
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
-  margin: 0;
- } */
+/* Styles for Mobile devices */
 
-/* main {
-  flex-grow: 1;
-} */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-scheme-1-text);
+  background: var(--color-scheme-1-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: var(--color-scheme-1-text);
+  text-decoration: none;
+  transition: color 250ms linear;
+}
+
+a:active {
+  color: var(--color-scheme-1-accent);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.big-blue-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  line-height: 1.5;
+  border: 1px solid var(--color-governor-bay);
+  border-radius: 6px;
+  background: var(--color-governor-bay);
+  color: var(--color-white);
+  transition: color 250ms linear, background-color 250ms linear;
+}
+
+.big-blue-btn:hover,
+.big-blue-btn:focus {
+  background: transparent;
+  color: var(--color-scheme-1-text);
+}
+
+.big-blue-btn:active {
+  background-color: var(--color-governor-bay-lighter);
+  border: 1px solid var(--color-governor-bay);
+  transform: translateY(2px);
+}
+
+.big-blue-btn:disabled {
+  background-color: var(--color-governor-bay);
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
