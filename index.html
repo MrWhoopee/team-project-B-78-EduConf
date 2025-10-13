@@ -3,34 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="max-age=31536000" />
     <meta
       name="description"
       content="Educational Conference 2025 — inspiring talks, workshops, and networking for teachers and education professionals."
     />
-
     <title>EduConf</title>
+
+    <!-- Preload favicon -->
+    <link rel="preload" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF1SURBVHgB7ZexSsNQFIb/iHPyAt4+QdWlXWIfoOoDRNwVVLAOEUXQQQQtjVCFgtBd1F10EAdBfQAVxEkSJ3FJNyfNScnS3HCT28Q45Ftzkvz3nPOfnCifX98/yJER5EwhIHcBo6IAx7HRWF3G48M9ZFFVDeb6BhYWl0LXFJELrNYBDq0mGCtBFjqEpml4fXsPXRNmIKB93IGu1yBDtTKJD08ED24PnJ+d4vrqEn8BNwNrjRU/5fXpWWTN/3fBIEFTiqAM3tze+Q5IVYA+VfMayhHGqV7Xi14uJYAeOsaYMI5sF4fEAi48h3S7J8I4EmrMzadfgt29fdRnwu4YHFRaViWIasL2Ucc/cVISC6DZwGtCak4ZEgsol8f9sZwWxT4QuwQvz0+Qpee6kBbASn177WxvYRii9gmhAMPoW8uxbQxDlEVjlSAQkQVcATTBaI2qViYgC01C09wU7hRcAbRAWq1mrK9eFHSv23OFcUrxa4acKQT8AgnBZ05RX+XJAAAAAElFTkSuQmCC" as="image" />
     <link rel="icon" type="image/x-icon" href="/team-project-B-78-EduConf/assets/favicon-Ct7lGI08.png" />
+
+    <!-- Normalize CSS (preloaded for faster rendering) -->
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      as="style"
+      onload="this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      />
+    </noscript>
+
+    <!-- Fonts optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@400;700&family=Teachers:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- Styles preload -->
+    <noscript></noscript>
     <script type="module" crossorigin src="/team-project-B-78-EduConf/index.js"></script>
     <link rel="stylesheet" crossorigin href="/team-project-B-78-EduConf/assets/index-EsvupP5R.css">
   </head>
+
   <body>
+    <!-- HEADER -->
     <header class="page-header">
   <div class="container">
     <nav class="header-nav">
@@ -71,6 +84,7 @@
     <a class="blue-link-button hide" href="#register">Register Now</a>
   </div>
 </header>
+
 
     <main>
       <section class="hero" id="hero">
@@ -1377,6 +1391,7 @@
 
     </main>
 
+    <!-- FOOTER & MODALS -->
     <footer class="footer">
   <div class="container">
     <nav class="footer-nav">
@@ -1495,5 +1510,6 @@
 </div>
 
 
+    <!-- Lazy-load scripts -->
   </body>
 </html>
